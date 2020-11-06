@@ -49,14 +49,14 @@ export class RestaurantInput extends Component {
   }
 };
 
-const mptp = dispatch => {
-  return {
-    addRestaurant: (nr) => {
-      dispatch(addRestaurant(nr))
-    }
+// const mptp = dispatch => {
+//   return {
+//     addRestaurant: (nr) => {
+//       dispatch(addRestaurant(nr))
+//     }
 
-  }
-}
+//   }
+// }
 
 //connect this component by wrapping RestaurantInput below
-export default connect(null, mptp)(RestaurantInput)
+export default connect(null, {addRestaurant})(RestaurantInput)
